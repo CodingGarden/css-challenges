@@ -17,6 +17,7 @@
 ## Stretch Feature
 
 * Ronnie: will save the time where the user stopped and return from there?
+* JonSugar: Add keyboard controls.
 
 ## Acknowledgements
 
