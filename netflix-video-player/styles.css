@@ -58,6 +58,7 @@ body {
 .video-container .progress-controls .progress-bar .playhead {
   background: #E31221;
   display: inline-block;
+  transition: all 0.2s;
 }
 
 .video-container .progress-controls .progress-bar .watched-bar {
