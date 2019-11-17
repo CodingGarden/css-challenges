@@ -127,7 +127,7 @@ body {
 }
 
 .video-container .controls button.captions svg {
-  transform: rotateY(180deg);
+  stroke: none;
 }
 
 .video-container .controls .title {
