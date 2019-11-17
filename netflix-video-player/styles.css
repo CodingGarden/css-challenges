@@ -21,15 +21,63 @@ body {
   height: 100%;
 }
 
-.video-container .controls {
+.video-container .controls-container {
   position: fixed;
   bottom: 0px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 40vh;
+  /* Thanks to theArtifacts */
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)); 
+}
+
+.video-container .progress-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.video-container .progress-controls .time-remaining {
+  margin: 1vw;
+}
+
+.video-container .progress-controls .progress-bar {
+  width: 90%;
+  height: 1vw;
+  max-height: 10px;
+  background: #5B5B5B;
+  display: flex;
+  align-items: center;
+}
+
+.video-container .progress-controls .progress-bar .watched-bar,
+.video-container .progress-controls .progress-bar .playhead {
+  background: #E31221;
+  display: inline-block;
+}
+
+.video-container .progress-controls .progress-bar .watched-bar {
+  height: 110%;
+  width: 20%;
+}
+
+.video-container .progress-controls .progress-bar .playhead {
+  height: 3vw;
+  width: 3vw;
+  max-height: 25px;
+  max-width: 25px;
+  border-radius: 50%;
+}
+
+.video-container .controls {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4vmin;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .video-container .controls button {
@@ -42,6 +90,15 @@ body {
   min-width: 50px;
   min-height: 50px;
   margin: 0px 1vw;
+  opacity: 0.4;
+  transform: scale(0.9);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.video-container .controls button:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .video-container .controls button svg {
