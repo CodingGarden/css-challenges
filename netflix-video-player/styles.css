@@ -56,8 +56,13 @@ body {
 .video-container .controls button.help svg,
 .video-container .controls button.episodes svg,
 .video-container .controls button.full-screen svg,
+.video-container .controls button.volume svg path,
 .video-container .controls button.cast svg {
   fill: none;
+}
+
+.video-container .controls button.captions svg {
+  transform: rotateY(180deg);
 }
 
 .video-container .controls .title {
