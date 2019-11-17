@@ -63,6 +63,11 @@ body {
   fill: none;
 }
 
+.video-container .controls button.rewind svg,
+.video-container .controls button.fast-forward svg {
+  stroke: none;
+}
+
 .video-container .controls button.captions svg {
   transform: rotateY(180deg);
 }
