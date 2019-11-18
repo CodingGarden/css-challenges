@@ -143,6 +143,12 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .video-container .controls .title {
+    display: none;
+  }
+}
+
 .video-container .controls .title .series {
   color: #FEFEFE;
   font-weight: bold;
