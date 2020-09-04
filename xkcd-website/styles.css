@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #96A8C8;
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+main {
+  width: 60%;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 0.25rem;
+  min-height: 100px;
+}
+
+.box.main {
+  width: 100%;
+}
+
+.menu {
+  width: calc(25% - 0.5rem);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0.75rem;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header {
+  width: calc(75% - 0.5rem);
+  display: flex;
+  font-style: italic;
+}
+
+.header .header-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.comic img {
+  max-width: 100%;
+}
+
+.info {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  background-color: #6E7B91;
+  color: white;
+  font-size: 1.25rem;
+  border: 1px solid black;
+  font-family: inherit;
+  font-weight: inherit;
+  font-variant: inherit;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #808080;
+}
+
+button:hover {
+  color: #6E7B91;
+  background-color: white;
+}
+
+.buttons {
+  margin: 1rem;
+}

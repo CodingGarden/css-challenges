@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xkcd</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="box menu">
+      <ul>
+        <li>Archive</li>
+        <li>What If?</li>
+        <li>Blag</li>
+        <li>How To</li>
+        <li>Store</li>
+        <li>About</li>
+        <li>Feed • Email</li>
+        <li>TW • FB • IG</li>
+      </ul>
+    </div>
+    <div class="box header">
+      <div class="header-img">
+        <img src="https://xkcd.com/s/0b7742.png" alt="header">
+        <img src="https://imgs.xkcd.com/news/blm.png" alt="blm">
+      </div>
+      <p>A webcomic of romance, sarcasm, math, and language.</p>
+    </div>
+    <div class="box main">
+      <div class="comic center">
+        <div class="comic-title" id="title">Loading..</div>
+        <div class="buttons">
+          <button class="button first">|<</button>
+          <button class="button prev">< Prev</button>
+          <button class="button random">Random</button>
+          <button class="button next">Next ></button>
+          <button class="button last">>| </button>
+        </div>
+        <img id="img" src="https://i.giphy.com/media/sSgvbe1m3n93G/source.gif" alt="loading">
+        <div class="buttons">
+          <button class="button first">|<</button>
+          <button class="button prev">< Prev</button>
+          <button class="button random">Random</button>
+          <button class="button next">Next ></button>
+          <button class="button last">>| </button>
+        </div>
+      </div>
+      <p class="info center">Permanent link to this comic: https://xkcd.com/<span id="num">...</span>/</p>
+      <p class="info center">Image URL (for hotlinking/embedding): <span id="img_url">Loading...</span></p>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
